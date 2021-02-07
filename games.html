@@ -19,7 +19,7 @@
 
      <!-- Latest compiled JavaScript -->
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-     <link rel="stylesheet" href="./assets/css/games.css">
+     <link rel="stylesheet" href="./assets/css/games_catalogue.css">
     <title>Document</title>
 </head>
 <body>
@@ -44,7 +44,7 @@
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum nemo temporibus eveniet quo praesentium, consequuntur voluptatem voluptate cum error animi distinctio nobis omnis. Veniam magni alias atque pariatur laudantium ab.
                 </p>
                 <br>
-                <button class="btn btn-outline-success open_btns" dataset.game_id="game1">Play</button>
+                <button class="btn btn-outline-success open_btns" value="game1">Play</button>
               </div>
             </div>
 
@@ -100,18 +100,22 @@
 
     <!-- game divs -->
     <div id="game1">
-      <button class="btn btn-primary" id="all_games_btn">All Games</button>
-      <div id="flash_display">
+        <button class="btn btn-outline-primary ml-auto" id="all_games_btn">All Games</button>
+        <div id="flash_display">
           
-      </div>
+        </div>
+     
+      
 
-      <div id="choice">
-         
-      </div>
 
-      <button id="play">Play</button>
+
+      <button class="btn btn-outline-success shadow" id="play">Play</button>
       <script src="/assets/js/game1.js"></script>
+      <link rel="stylesheet" href="/assets/css/game1.css">
   </div>
+
+
+
   <script src="/assets/js/games.js"></script>
   <script src="https://rawgit.com/theraot/emoji/master/emoji.js" charset="utf-8"></script>
 </body>

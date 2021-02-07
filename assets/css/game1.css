@@ -1,0 +1,26 @@
+#game1 {
+    width: 700px;
+    height: 500px;
+    border: coral solid 10px;
+    margin: auto;
+    position: relative;
+    
+    
+}
+
+#flash_display {
+    font-size: 150px;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    top: 30%;
+
+}
+
+#play {
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+    
+}
