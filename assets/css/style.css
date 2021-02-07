@@ -198,7 +198,7 @@ html {
 }
   .section-1 .row .col-md-6 .pray img {
     opacity: 0.8;
-    width: 150%;
+    width: 158%;
     margin-top: 10%;
     border-radius: 0.2em;
   }
@@ -303,4 +303,39 @@ html {
   .text {
     color: rgb(167, 109, 33);
     
+  }
+   /* footer */
+   footer {
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+  }
+  
+  footer p > span {
+    color: #ff512f;
+  }
+  
+  footer input {
+    border: none !important;
+  }
+  
+  footer input::placeholder {
+    color: white !important;
+  }
+  
+  footer .input-group .input-group-text {
+    background: var(--bggradient);
+    border: none;
+  }
+  
+  footer .column i {
+    color: #dedceb;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+    z-index: 9999;
+    transition: all 1.5s ease;
   }
