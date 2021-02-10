@@ -2,8 +2,33 @@
     font-size: 1.5em;
 }
 
+#title {
+    font-family: 'Calibri', cursive;
+    font-size: 40px;
+    margin-left: 35px;
+    margin-top: 40px;
+}
 
+#turn {
+    background: #330000;
+    color: red;
+    height: 30px;
+    width: 50px;
+    margin-left: 2vw;
+}
 
+.start {
+    margin-left: 40%;
+}
+
+.level {
+    margin-left: 2vw;
+}
+
+.controls {
+    margin-top: 2vw;
+    margin-left: 18vw;
+}
 
 .boxes {
     margin-top: 3%;
@@ -71,3 +96,14 @@
     background: yellow;
 }
 
+#control-center {
+    align-items: end;
+    background: lightblue;
+    height: 250px;
+    width: 100%;
+    border-style: dashed;
+    border-width: 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
