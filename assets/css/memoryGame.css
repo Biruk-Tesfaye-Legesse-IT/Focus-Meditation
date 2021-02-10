@@ -8,7 +8,18 @@
     background-image: url(https://www.flaticon.com/svg/vstatic/svg/3202/3202926.svg?token=exp=1613062721~hmac=f41d4597b0a6245891572b6e07a969ce);
 }
 
+#tico {
+    margin-left: 2% !important;
+    padding-left: 2%;
+    margin-top: 0% !important;
+    /* padding-top: 1vw; */
+    font-size: 5vw;
+}
 
+.start {
+    margin-top: 5%;
+    margin-left: 43%;
+}
 
 .memory-game {
     padding-top: 2%;
@@ -56,3 +67,12 @@
     transform: rotateX(180deg);
 }
 
+.numed{
+    
+    background: #330000;
+    color: red;
+    height: 30px;
+    width: 50px;
+    margin-left: 2vw;
+    
+}
