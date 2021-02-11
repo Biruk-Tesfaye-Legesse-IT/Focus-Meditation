@@ -13,6 +13,9 @@ const C3 = document.querySelector(".C3");
 const D1 = document.querySelector(".D1");
 const D2 = document.querySelector(".D2");
 const D3 = document.querySelector(".D3");
+let match = 0;
+let recordCards = [];
+let hasFlippedCard = false;
 let trialNumber = document.getElementById("trialNumber");
 let trialText=document.getElementById("trialText");
 let roundNumber=document.getElementById("roundNumber");
@@ -39,4 +42,34 @@ function flipCard() {
     secondCard = this;
 
   
+}
+
+function checkForMatch() {
+    let isMatch = firstCard.dataset.source === secondCard.dataset.source;
+    if (isMatch) { console.log("Same"); }
+    console.log(firstCard.dataset.source);
+    console.log(secondCard.dataset.source);
+
+
+    if (isMatch) {
+        disableCards();
+        match++;
+        console.log(match);
+        if (match == 6) {
+
+            console.log("You win");
+            win();
+        }
+    } else if(error==10) {
+        
+        console.log("You Lose");
+        lose();
+
+    } else{
+        trialNumber.innerText=trialNumber.innerText-1;
+        console.log("NumberOfTrials:" + trialNumber.innerHTML);     
+        unflipCards();
+    }
+
+
 }
