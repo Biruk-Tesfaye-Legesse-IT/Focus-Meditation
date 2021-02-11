@@ -23,6 +23,27 @@ startButton.addEventListener('click', start);
 
 
 
+function start() {
+    console.log(highScore);
+    trialNumber.innerText=10;
+    
+    console.log("start is being invoked");
+    shuffle()
+    cards.forEach(card => card.addEventListener('click', flipCard));
+
+    lockBoard = false;
+
+  
+    cards.forEach(card => card.classList.remove('flip'));
+
+
+    recordCards = [];
+
+    hasFlippedCard = false;
+
+
+}
+
 
 function flipCard() {
 
