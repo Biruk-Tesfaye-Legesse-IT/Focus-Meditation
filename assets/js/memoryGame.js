@@ -73,3 +73,33 @@ function checkForMatch() {
 
 
 }
+
+function disableCards() {
+    if (firstCard.classList.contains('flips')) {
+        firstCard.removeEventListener('click', flipCard);
+        secondCard.removeEventListener('click', flipCard);
+    } else {
+
+    }
+   
+}
+
+// function renableCards() {
+//     firstCard.addEventListener('click', flipCard);
+//     secondCard.addEventListener('click', flipCard);
+
+//     resetBoard();
+// }
+
+function unflipCards() {
+    lockBoard = true;
+
+    setTimeout(() => {
+
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+        error++;
+        console.log("Error: " + error);
+        
+    }, 500);
+}
