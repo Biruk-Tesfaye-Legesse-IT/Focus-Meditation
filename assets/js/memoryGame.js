@@ -139,3 +139,23 @@ function shuffle() {
     });
 };
 
+
+(function controlGame(){
+    highscoreDisplay.innerText=highScore;
+})();
+
+function lose(){
+    console.log("lose is invoked");    
+    
+    // trialText.innerText="You lose";
+    error=0;
+    match=0;
+    
+    // trialNumber.innerText="5";
+    // trialText.innerText="Trial's Left: ";
+    start();
+    
+   
+    
+}
+
