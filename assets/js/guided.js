@@ -52,5 +52,31 @@ timeSelect.forEach(option => {
   });
 });
 
+const checkPlaying = song => {
+  if (song.paused) {
+    song.play();
+    video.play();
+    play.src = "./svg/pause.svg";
+  } else {
+    song.pause();
+    video.pause();
+    play.src = "./svg/play.svg";
+  }
+};
 
+song.ontimeupdate = function() {
+  let currentTime = song.currentTime;
+  let elapsed = fakeDuration - currentTime;
+  let seconds = Math.floor(elapsed % 60);
+  let minutes = Math.floor(elapsed / 60);
+  timeDisplay.textContent = `${minutes}:${seconds}`;
+  let progress = outlineLength - (currentTime / fakeDuration) * outlineLength;
+  outline.style.strokeDashoffset = progress;
 
+  if (currentTime >= fakeDuration) {
+    song.pause();
+    song.currentTime = 0;
+    play.src = "./svg/play.svg";
+    video.pause();
+  }
+};
