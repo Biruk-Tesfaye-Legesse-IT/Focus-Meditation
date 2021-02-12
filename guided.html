@@ -4,21 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/guided.css">
     <title>Guided Meditation</title>
   </head>
   <body>
     <div class="app">
+        <div class="row  mr-2">
       <div class="vid-container">
         <video loop >
           <source src="https://player.vimeo.com/external/342387372.sd.mp4?s=44bfce58e927033b3ecbc122461adb44b3793352&profile_id=139&oauth2_token_id=57447761"  type="video/mp4">
         </video>
         </div>
         <div class="time-select">
-          <button data-time="180">3 Minutes</button>
+          <button type="button" class="btn btn-outline-success">Success</button>
           <button data-time="420" class="medium-mins">7 Minutes</button>
           <button data-time="600" class="long-mins">10 Minutes</button>
         </div>
@@ -44,6 +45,7 @@
         <button data-sound="./assets/sounds/rain.mp3" data-video="https://player.vimeo.com/external/196136356.sd.mp4?s=917eff382e054fc882019d03ff1fa54ec074ecb8&profile_id=164&oauth2_token_id=57447761" ><img src="./assets/images/snowflake.png" alt=""></button>
     </div>
     </div>
+    </div>
 
     <script src="./assets/js/guided.js"></script>
 
@@ -52,5 +54,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    
+
+    </body>
 </html>
