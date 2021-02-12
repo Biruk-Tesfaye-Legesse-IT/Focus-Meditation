@@ -11,6 +11,11 @@
     align-items: center;
     font-family: "Montserrat", sans-serif;
   }
+  .vid-container{
+      @media min-width:480px {
+          background:white;
+      }
+  }
   
   .time-select,
   .sound-picker {
