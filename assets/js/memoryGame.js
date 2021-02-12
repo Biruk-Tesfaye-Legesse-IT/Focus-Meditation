@@ -159,3 +159,18 @@ function lose(){
     
 }
 
+
+function win(){ 
+    console.log("win is invoked");
+    round++;
+    roundNumber.innerText=round;
+    console.log("Round "+round);
+    if (round>highScore);
+        highScore=round;
+        console.log("High Score", highScore);
+    match=0;
+    start();
+}
+
+
+cards.forEach(card => card.addEventListener('click', flipCard));
