@@ -16,9 +16,14 @@ const D3 = document.querySelector(".D3");
 let match = 0;
 let recordCards = [];
 let hasFlippedCard = false;
-let trialNumber = document.getElementById("trialNumber");
+let lockBoard = true;
+let firstCard, secondCard;
+let error=0;
 let trialText=document.getElementById("trialText");
 let roundNumber=document.getElementById("roundNumber");
+let highscoreDisplay=document.getElementById("highscore");
+let highScore=2;
+let round=1;
 startButton.addEventListener('click', start);
 
 
