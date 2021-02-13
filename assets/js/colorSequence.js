@@ -105,3 +105,29 @@ function nine() {
     bbottom3.style.backgroundColor = "lightskyblue";
 }
 
+
+function clearColor() {
+    top1.style.backgroundColor = "darkgreen";
+    top2.style.backgroundColor = "darkred";
+    top3.style.backgroundColor = "cyan";
+    bottom1.style.backgroundColor = "goldenrod";
+    bottom2.style.backgroundColor = "darkblue";
+    bottom3.style.backgroundColor = "yellow";
+    bbottom1.style.backgroundColor = "goldenrod";
+    bbottom2.style.backgroundColor = "darkblue";
+    bbottom3.style.backgroundColor = "yellow";
+
+}
+
+function flashColor() {
+    top1.style.backgroundColor = "lightgreen";
+    top2.style.backgroundColor = "tomato";
+    top3.style.backgroundColor = "tomato";
+    bottom1.style.backgroundColor = "yellow";
+    bottom2.style.backgroundColor = "lightskyblue";
+    bottom3.style.backgroundColor = "lightskyblue";
+    bbottom1.style.backgroundColor = "yellow";
+    bbottom2.style.backgroundColor = "lightskyblue";
+    bbottom3.style.backgroundColor = "lightskyblue";
+}
+
