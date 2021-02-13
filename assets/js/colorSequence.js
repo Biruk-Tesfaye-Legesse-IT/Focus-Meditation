@@ -50,3 +50,58 @@ function play() {
     intervalId = setInterval(gameTurn, 800);
 }
 
+
+function one() {
+
+    top1.style.backgroundColor = "lightgreen";
+}
+
+function two() {
+
+    top2.style.backgroundColor = "tomato";
+
+}
+
+function three() {
+
+    top3.style.backgroundColor = "tomato";
+}
+
+function four() {
+
+    bottom1.style.backgroundColor = "yellow";
+}
+
+function five() {
+
+
+
+    bottom2.style.backgroundColor = "lightskyblue";
+}
+
+function six() {
+
+
+
+    bottom3.style.backgroundColor = "lightskyblue";
+}
+
+function seven() {
+
+    bbottom1.style.backgroundColor = "yellow";
+}
+
+function eight() {
+
+
+
+    bbottom2.style.backgroundColor = "lightskyblue";
+}
+
+function nine() {
+
+
+
+    bbottom3.style.backgroundColor = "lightskyblue";
+}
+
