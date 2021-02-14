@@ -1,6 +1,5 @@
 // jshint esversion:6
 
-
 let order = [];
 let playerOrder = [];
 let flash;
@@ -11,7 +10,6 @@ let intervalId;
 let mistakeFail = true;
 let on = true;
 let win;
-
 
 const turnCounter = document.querySelector("#turn");
 const top1 = document.querySelector("#top1");
@@ -24,6 +22,7 @@ const bbottom1 = document.querySelector("#b-bottom1");
 const bbottom2 = document.querySelector("#b-bottom2");
 const bbottom3 = document.querySelector("#b-bottom3");
 const startButton = document.querySelector("#start");
+
 
 
 startButton.addEventListener('click', (event) => {
@@ -52,7 +51,6 @@ function play() {
     intervalId = setInterval(gameTurn, 800);
 }
 
-
 function gameTurn() {
     on = false;
 
@@ -79,8 +77,6 @@ function gameTurn() {
         }, 200);
     }
 }
-
-
 
 function one() {
 
@@ -135,6 +131,8 @@ function nine() {
 
     bbottom3.style.backgroundColor = "lightskyblue";
 }
+
+
 
 
 function clearColor() {
@@ -282,6 +280,23 @@ bbottom3.addEventListener('click', (event) => {
     }
 });
 
+
+
+// trial.addEventListener('click', (event) => {
+//     if (on) {
+//         playerOrder.push(5);
+//         check();
+//         four();
+//         if (!win) {
+//             setTimeout(() => {
+//                 clearColor();
+//             }, 300);
+//         }
+//     }
+// });
+
+
+
 function check() {
     if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
         good = false;
@@ -323,7 +338,6 @@ function check() {
     }
 
 }
-
 
 function winGame() {
     flashColor();
