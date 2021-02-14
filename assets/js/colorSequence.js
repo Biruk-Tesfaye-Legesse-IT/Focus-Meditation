@@ -8,6 +8,8 @@ let turn;
 let good;
 let compTurn;
 let intervalId;
+let mistakeFail = true;
+let on = true;
 let win;
 
 
@@ -49,6 +51,35 @@ function play() {
 
     intervalId = setInterval(gameTurn, 800);
 }
+
+
+function gameTurn() {
+    on = false;
+
+    if (flash == turn) {
+        clearInterval(intervalId);
+        compTurn = false;
+        clearColor();
+        on = true;
+    }
+
+    if (compTurn) {
+        clearColor();
+        setTimeout(() => {
+            if (order[flash] == 1) one();
+            if (order[flash] == 2) two();
+            if (order[flash] == 3) three();
+            if (order[flash] == 4) four();
+            if (order[flash] == 5) five();
+            if (order[flash] == 6) six();
+            if (order[flash] == 7) seven();
+            if (order[flash] == 8) eight();
+            if (order[flash] == 9) nine();
+            flash++;
+        }, 200);
+    }
+}
+
 
 
 function one() {
