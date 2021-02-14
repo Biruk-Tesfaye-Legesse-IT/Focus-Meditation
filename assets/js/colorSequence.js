@@ -162,3 +162,123 @@ function flashColor() {
     bbottom3.style.backgroundColor = "lightskyblue";
 }
 
+
+top1.addEventListener('click', (event) => {
+    if (on) {
+        playerOrder.push(1);
+        check();
+        one();
+        if (!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+top2.addEventListener('click', (event) => {
+    if (on) {
+        playerOrder.push(2);
+        check();
+        two();
+        if (!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+
+top3.addEventListener('click', (event) => {
+    if (on) {
+        playerOrder.push(3);
+        check();
+        three();
+        if (!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+
+bottom1.addEventListener('click', (event) => {
+    if (on) {
+        playerOrder.push(4);
+        check();
+        four();
+        if (!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+bottom2.addEventListener('click', (event) => {
+    if (on) {
+        playerOrder.push(5);
+        check();
+        five();
+        if (!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+bottom3.addEventListener('click', (event) => {
+    if (on) {
+        playerOrder.push(6);
+        check();
+        six();
+        if (!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+bbottom1.addEventListener('click', (event) => {
+    if (on) {
+        playerOrder.push(7);
+        check();
+        seven();
+        if (!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+bbottom2.addEventListener('click', (event) => {
+    if (on) {
+        playerOrder.push(8);
+        check();
+        eight();
+        if (!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
+bbottom3.addEventListener('click', (event) => {
+    if (on) {
+        playerOrder.push(9);
+        check();
+        nine();
+        if (!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+
