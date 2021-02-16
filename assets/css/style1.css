@@ -60,3 +60,37 @@ form.submit:hover{
     cursor: pointer;
     
 }
+/* nav bar */
+@media only screen and (max-width: 1200px) {
+    ul {
+      margin-left: 40% !important;
+    }
+  }
+ul{
+	margin-left: 80%;
+    
+	list-style-type: none;
+	margin-top: 20px;
+}
+ul li{
+	display:inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #f08080;
+	color: #000;
+}
+ul li.active a{
+	background-color: #ffffff;
+	color:#000;
+}
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
