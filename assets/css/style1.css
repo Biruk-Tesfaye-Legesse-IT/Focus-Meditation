@@ -2,9 +2,8 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background: url(../images/unsplash.jpg);
+    background: url(../images/p6.jpg);
     background-position: center;
-    background-size: 100%;
     font-family:sans-serif;
 
 }
@@ -12,36 +11,43 @@ body {
     margin-top: 100px;
     color: white;
     text-transform: uppercase;
-    transition: all 4s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 .contact-title h1 {
-    font-size: 50px;
+    font-size: 32px;
     line-height: 10px;
+    font-family:sans-serif;
+    text-align: center;
 }
 .contact-title h2 {
     font-size: 16px;
+    font-family:sans-serif;
 
 }
-.form{
-    margin-top: 50px;
-    transition: all 4s ease-in-out;
-}
+@media only screen and (max-width: 600px) {
+    .form-control{
+      margin-left: 2% !important;
+      
+      
+    }
+  }
 .form-control{
     width: 600px;
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid rgb(237, 233, 241);
-    color: rgb(24, 21, 21);
-    font-size: 20px;
+    border-bottom: 1px solid rgb(11, 2, 20);
+    color: white;
+    font-size: 18px;
     margin-bottom: 16px;
 }
 input {
     height: 45px;
+    
 }
 form .submit {
     background:transparent;
-    border:2px solid rgb(250, 243, 243);
+    border-color: rgb(10, 4, 29);
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -49,7 +55,7 @@ form .submit {
     width: 250px ;
     margin-top: 20px;
 }
-form .submit :hover{
+form.submit:hover{
     background-color: #110e0e;
     cursor: pointer;
     
