@@ -111,19 +111,19 @@ function reset(){
 //List of songs
 let All_song = [
     {
-      name: "afag",
-      path: "../assets/sound/Marconi Union - Weightless (Official Video) - UfcAVejslrU.m4a",   
-      singer: "adfa"
+      name: "Bamboo Flute",
+      path:"./assets/sounds/Beautiful Chinese Music - Bamboo Flute - -5qhNRmMilI.m4a",   
+      singer: "Beautiful Chinese Music"
     },
     {
-      name: "second song",
-      path: "music/song2.mp3",      
-      singer: "2"
+      name: "Weightless",
+      path: "./assets/sounds/Marconi Union - Weightless (Official Video) - UfcAVejslrU.m4a",      
+      singer: "Marconi Union"
     },
     {
-      name: "third song",
-      path: "music/song3.mp3",
-      singer: "3"
+      name: "Zen",
+      path: "./assets/sounds/Relaxing Sounds - Zen - Chinese Bamboo Flute w - uupzk-YCBO0.m4a",
+      singer: "Relaxin Sounds"
     },
   
  ];
