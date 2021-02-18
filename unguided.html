@@ -4,17 +4,16 @@
 	<title>Unguided Meditation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/unguided.css">
+      <link rel="stylesheet" type="text/css" href="./assets/css/unguided.css">
 </head>
 
 <body>
-
+    
   <div class="main">
-      <div class="vid-container">
-        <video loop >
-          <source src="https://player.vimeo.com/external/342387372.sd.mp4?s=44bfce58e927033b3ecbc122461adb44b3793352&profile_id=139&oauth2_token_id=57447761"  type="video/mp4">
+      
+        <video >
+          <source src="https://player.vimeo.com/external/469921725.sd.mp4?s=07b9ba4c866b12babbf0d1a2ad84409cf675be83&profile_id=139&oauth2_token_id=57447761" loop autoplay muted  type="video/mp4">
         </video>
-    </div>
      <!--- right part --->
   	 <div class="right">
 
@@ -56,6 +55,7 @@
         <div class="player">
   	       <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
       	   <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <button onclick="juststop()" id="stoped"><i class="fa fa-stop" aria-hidden="true"></i></button>
   	       <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
   	   </div>
          <br><br><br><br><br><br>
@@ -71,7 +71,8 @@
             <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">  
          </div>
         </div>
-      
+        <br><br><br><br><br><br>
+        
 
 
   </div>
@@ -79,6 +80,8 @@
    
   <!--- Add javascript file --->
   <script src="./assets/js/unguided.js"></script>
+
+  
 
 </body>
 </html>

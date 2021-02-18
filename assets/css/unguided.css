@@ -68,6 +68,12 @@ video {
     margin-top: 25vh;
     margin-right: 5vh;
 }
+@media (max-width: 767px) {
+    .time {
+        font-size: 15px;
+        margin-top: 50vh;
+    }
+}
 .button{
     display: flex;
     flex-direction: row;
@@ -83,6 +89,25 @@ video {
 #auto{
     margin-top: 10vh;
 }
+@media (max-width: 767px) {
+    #artist {
+        font-size: 15px;
+        margin-top: 5vh;
+    }
+}
+@media (max-width: 767px) {
+    #duration_slider {
+        font-size: 15px;
+        margin-top: 40vh;
+    }
+}
+@media (max-width: 767px) {
+    #volume {
+        font-size: 15px;
+        margin-top: 5vh;
+    }
+}
+
 /* left & right part */
 .right{
 	position: relative;

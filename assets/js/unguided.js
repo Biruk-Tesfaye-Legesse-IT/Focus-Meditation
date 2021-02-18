@@ -1,6 +1,7 @@
 //quered the necessary components
 let previous = document.querySelector('#pre');
 let play = document.querySelector('#play');
+let stoper = document.querySelector('#stoped');
 let next = document.querySelector('#next');
 let title = document.querySelector('#title');
 let recent_volume= document.querySelector('#volume');
@@ -165,6 +166,7 @@ let All_song = [
  
       }else{
           pausesong();
+          stopsong();
       }
   }
  
@@ -186,6 +188,10 @@ let All_song = [
      track.pause();
      Playing_song = false;
      play.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
+ }
+ function stopsong(){
+     track.stop();
+     Playing_song=false;
  }
  
  
