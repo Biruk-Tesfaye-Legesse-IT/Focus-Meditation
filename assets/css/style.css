@@ -8,198 +8,168 @@
 html {
     font-family: 'Roboto', sans-serif;
 }
- .head {
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image:url("../images/wall1.jpg");
- }
+/* header */
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+header .logo
+{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.toggle
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active
+{
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
  @media only screen and (max-width: 600px) {
-  .glass {
-    width: 100% !important;
+.glass {
+  width: 100% !important;
+}
+}
+.glass {
+  display: flex;
+  margin-right:30%;
+  width: 60%;
+  padding: 100px;
+  height: 100vh;
+  backdrop-filter: blur(9px);    
+  border-radius: 10px;
+  border: 1p solid rgba(255,255,255,0.15);
+  background:linear-gradient(rgba(17, 17, 139, 0.12),rgba(125, 126, 199, 0.45));
+}
+.showcase
+{
+  position: relative;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:url(../images/wall1.jpg);
+  transition: 0.5s;
+  z-index: 2;
+}
+.showcase.active
+{
+  right: 300px;
+}
+.logo {
+  margin-right: 2%;
+  margin-top: none;
+  font-size: 18px;
+  padding: 0.5%;
+}
+.text
+{
+  position: relative;
+  z-index: 10;
+}
+.text h3
+{
+  font-size: 75px;
+  line-height: 75px;
+  font-family: "segoe UI",sans-serif;
+  color: #fff;
+
+}
+.text p
+{
+  color:rgb(112, 151, 224) ;
+  margin: 3rem 0;
+  font-size: 20px;
+  width: 79%;
+  font-family: "segoe UI",sans-serif ;
+}
+.menu
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul
+{
+  position: relative;
+}
+.menu ul li
+{
+  list-style: none;
+}
+.menu ul li a
+{
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+.menu ul li a:hover
+{
+  color: #03a9f4; 
+}
+
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 20px;
+  }
+  .text h2
+  {
+    font-size: 2em;
+  }
+  .text h3
+  {
+    font-size: 2em;
   }
 }
- .glass {
-     display: flex;
-     margin-right:45%;
-     width: 55%;
-     height: 105vh;
-     backdrop-filter: blur(9px);    
-     border-radius: 10px;
-     border: 1p solid rgba(255,255,255,0.15);
-     background:linear-gradient(rgba(37, 37, 54, 0.12),rgba(125, 126, 199, 0.45));
- }
- div.content {
-     margin: screm auto 0 auto;
-     width: 80%;
- }
- div.textview {
-    margin: 7rem auto 0 auto;
-    width: 80%;
-    color: white;
- }
- div.content h1 {
-     font-size: 50px;
-     line-height: 65px;
-     font-family: "segoe UI",sans-serif;
- }
- div.content p {
-    color:rgb(150, 140, 140) ;
-    margin: 3rem 0;
-    font-size: 20px;
-    width: 79%;
-    font-family: "segoe UI",sans-serif ;
- }
- div.btn button{
-     align-items: center;
-     padding: 10px 60px;
-     margin-left:50% ;
+button{
+     padding: 12px 40px;
+     margin-left:10% ;
+     margin-top: 10%;
      background: transparent;
      text-transform: uppercase;
      color:white;
      border: 0px solid white;
      border-radius: 12px;
-     width: 90%;
+     width: 65%;
      cursor: pointer;
-     backdrop-filter: blur(1px);
+     backdrop-filter: blur(4px);
      
-}
-.menu-wrap{
-	position: relative;
-	top: 0;
-	left: 20;
-	z-index: 2;
-}
-
-.toggler{
-	position: absolute;
-	top: 0.5rem;
-	left: 0.5rem;
-	width: 60px;
-	height: 60px;
-	z-index: 3;
-	opacity: 0;
-	cursor: pointer;
-}
-
-.hamburger{
-	top: 0.5rem;
-	left: 0.5rem;
-	width: 60px;
-	height: 60px;
-	z-index: 2;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
-	background: transparent;
-}
-
-.hamburger>div{
-	position: absolute;
-	width: 60%;
-	height: 3px;
-	border-radius: 1.5px;
-	background-color: #eaedee;
-	transition: .4s;
-}
-
-.hamburger>div:before{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 3px;
-	border-radius: 1.5px;
-	background-color: #e7ecee;
-	top: -10px;
-	left: 0;
-	transition: .4s;
-}
-
-.hamburger>div:after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 3px;
-	border-radius: 1.5px;
-	background-color: #e4e9eb;
-	top: 10px;
-	left: 0;
-	transition: .4s;
-}
-.toggler:checked + .hamburger>div{
-	transform: rotate(135deg);
-}
-
-.toggler:checked:hover + .hamburger>div{
-	transform: rotate(225deg);
-}
-
-.toggler:checked + .hamburger>div:before, .toggler:checked + .hamburger>div:after{
-	top: 0;
-	transform: rotate(90deg);
-}
-.menu{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	visibility: hidden;
-	transition: .6s;
-}
-
-.menu > div{
-    position: absolute;
-    top: 50%;
-    right: 1%;
-    width: 200px;
-    height: 500px;
-    border-radius: 50%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    text-align: center;
-    transition: .6s;
-}
-
-.menu > div > div{
-	max-width: 90vw;
-	max-height: 100vh;
-	opacity: 0;
-	transition: .6s;
-}
-
-.menu > div > div > ul > li{
-	list-style: none;
-}
-
-.menu > div > div > ul > li > a{
-	text-decoration: none;
-	color:rgb(12, 21, 29);
-	font-weight: 550;
-	text-transform: uppercase;
-	margin: .5rem;
-	transition: .3s;
-	font-size: 1.2rem;
-	display: inline-block;
-}
-
-.menu > div > div > ul > li > a:hover{
-	color: rgb(27, 25, 25);
-}
-
-.toggler:checked ~ .menu{
-	visibility: visible;
-}
-
-.toggler:checked ~ .menu > div{
-	transform: translateX(30%) translateY(-60%);
-}
-
-.toggler:checked ~ .menu > div > div{
-	opacity: 2;
+} 
+.section-1 {
+  padding: 3vmin 0vmin;
 }
   .section-1 .row .col-md-6 .pray img {
     opacity: 0.8;
@@ -207,11 +177,13 @@ html {
     margin-top: 10%;
     border-radius: 0.2em;
   }
-  
+  .section-1 .row .col-md-6:last-child {
+    position: relative;
+  }
   .section-1 .row .col-md-6 .panel {
     position: relative;
     top: 15vmin;
-    left: -18vmin;
+    left: -8vmin;
     background: white;
     border-radius: 3px;
     text-align: left;
@@ -221,7 +193,6 @@ html {
     font-family: var(--Rubik);
     z-index: 1;
   }
-  
   .section-1 .row .col-md-6 .panel h1 {
     font-weight: bold;
     padding: 0.4em 0;
