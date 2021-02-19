@@ -1,43 +1,3 @@
-// getting the UI
-const username = document.querySelector('#username')
-const password = document.querySelector('#pwd')
-const login_form = document.querySelector('#login')
-
-// adding eventListener
-login_form.addEventListener('submit', login)
-
-
-
-function login(e) {
-    e.preventDefault();
-    let transaction = DB.transaction(['Accounts'], 'readwrite');
-    let objectStore = transaction.objectStore('Accounts');
-
-    let request = objectStore.index("username");
-
-    request.openCursor().onsuccess = (e) => {
-        let cursor = e.target.result;
-        if (cursor) {
-            if (cursor.value.username == username.value && cursor.value.password == password.value) {
-                localStorage.setItem("loggedIn", "true")
-                location = "../index.html"
-                return
-            }
-            cursor.continue()
-        }
-
-    }
-    transaction.oncomplete = () => {
-        console.log('Logged in');
-    }
-    transaction.onerror = () => {
-        console.log('There was an error, try again!');
-    }
-}
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,7 +34,7 @@ function login(e) {
 
                         <p class="mb-4 ">Please login to your Focus account </p>
 
-                        <form method="post" id="login">
+                        <form id="login">
 
                             <div class="form-group first ">
                                 <label for="username ">Username </label>

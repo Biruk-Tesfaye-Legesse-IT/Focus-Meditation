@@ -19,8 +19,8 @@ function login(e) {
         let cursor = e.target.result;
         if (cursor) {
             if (cursor.value.username == username.value && cursor.value.password == password.value) {
-                localStorage.setItem("loggedIn", "true")
-                location = "../index.html"
+                localStorage.setItem("loggedIn", cursor.value.username)
+                history.back()
                 return
             }
             cursor.continue()
@@ -28,7 +28,7 @@ function login(e) {
 
     }
     transaction.oncomplete = () => {
-        console.log('Logged in');
+        console.log('transaction completed');
     }
     transaction.onerror = () => {
         console.log('There was an error, try again!');

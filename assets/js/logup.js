@@ -30,11 +30,12 @@ function register(e) {
         }
     } else {
         let request = objectStore.add(newUser);
-
+        localStorage.setItem("loggedIn", newUser.username)
         request.onsuccess = () => {
             location = "../index.html"
         }
         transaction.oncomplete = () => {
+
             console.log('New user added');
         }
         transaction.onerror = () => {
