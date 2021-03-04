@@ -6,7 +6,7 @@ logout_btn.addEventListener('click', logout)
 
 function isLoggedIn() {
     if (!localStorage.getItem("loggedIn")) {
-        history.pushState({}, '', location.href)
+        history.pushState({}, '', "index.html")
         location.href = "login.html"
     }
 }
