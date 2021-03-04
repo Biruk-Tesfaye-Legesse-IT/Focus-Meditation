@@ -103,7 +103,7 @@ function register() {
     let request = objectStore.add(newUser);
     localStorage.setItem("loggedIn", newUser.username);
     request.onsuccess = () => {
-        location = "/";
+        location.href = "index.html";
     };
     transaction.oncomplete = () => {
 
