@@ -6,15 +6,16 @@ const flsh_display = document.querySelector('#flash_display')
 const choice_display = document.querySelector('#choices')
 let correct = document.querySelector('#correct')
 let wrong = document.querySelector('#wrong')
+let roundnumber = document.querySelector('#roundnumber');
 
 let game_number = 0;
 
 
-let answer = document.querySelector('#answer')
+let answer = document.querySelector('#answer');
 
 
 let selected_emojis = []
-let interval = 1000
+let interval = 1000;
 let level = 1;
 
 // getting highscore
@@ -24,7 +25,7 @@ var emoji = ['😀', '😁', '😂', '🤣', '😃', '😄', '😅', '😆', '�
 
 
 
-// display the squence
+// display the sequence
 
     ply_btn.addEventListener('click', function () {
 
@@ -34,13 +35,18 @@ var emoji = ['😀', '😁', '😂', '🤣', '😃', '😄', '😅', '😆', '�
                 if (level >= 3) {
                     if (interval>300) {
                         interval -= 50;
+                        level++;
+                        roundNumber.innerText=level;
+                        console.log(level);
                     }
                     
                 }else{
                     level++;
+                    roundNumber.innerText=level;
+                    console.log(level)
                 }
                 
-                ply_btn.textContent = "Next"
+                ply_btn.textContent = "Next";
             } else {
                 if (highscore>level) {
                     makeHighscore()
@@ -64,8 +70,8 @@ var emoji = ['😀', '😁', '😂', '🤣', '😃', '😄', '😅', '😆', '�
 
 
 
-        selected_emojis = createEmojiList(emoji, level)
-        let counter = 0
+        selected_emojis = createEmojiList(emoji, level);
+        let counter = 0;
         let loop = setInterval(function() {
             flsh_display.innerHTML = selected_emojis[counter];
             if (counter < selected_emojis.length) {

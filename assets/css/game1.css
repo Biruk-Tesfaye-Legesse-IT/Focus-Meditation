@@ -119,3 +119,13 @@ body{
     filter: blur(10px);
     margin: -20px;
   }
+
+  .numed{
+    
+    background: #330000;
+    color: red;
+    height: 30px;
+    width: 50px;
+    margin-left: 2vw;
+    
+}

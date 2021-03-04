@@ -1,3 +1,3 @@
-import {isLoggedIn} from "./app.JS"
+import {isLoggedIn} from "./app.js"
 
 isLoggedIn()

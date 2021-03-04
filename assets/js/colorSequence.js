@@ -136,28 +136,38 @@ function nine() {
 
 
 function clearColor() {
-    top1.style.backgroundColor = "darkgreen";
-    top2.style.backgroundColor = "darkred";
-    top3.style.backgroundColor = "cyan";
-    bottom1.style.backgroundColor = "goldenrod";
+    // top1.style.backgroundColor = "green";
+    // top2.style.backgroundColor = "red";
+    // top3.style.backgroundColor = "darkcyan";
+    // bottom1.style.backgroundColor = "yellow";
+    // bottom2.style.backgroundColor = "darkblue";
+    // bottom3.style.backgroundColor = "darkorange";
+    // bbottom1.style.backgroundColor = "black";
+    // bbottom2.style.backgroundColor = "gray";
+    // bbottom3.style.backgroundColor = "purple";
+
+    top1.style.backgroundColor = "darkblue";
+    top2.style.backgroundColor = "darkblue";
+    top3.style.backgroundColor = "darkblue";
+    bottom1.style.backgroundColor = "darkblue";
     bottom2.style.backgroundColor = "darkblue";
-    bottom3.style.backgroundColor = "yellow";
-    bbottom1.style.backgroundColor = "goldenrod";
+    bottom3.style.backgroundColor = "darkblue";
+    bbottom1.style.backgroundColor = "darkblue";
     bbottom2.style.backgroundColor = "darkblue";
-    bbottom3.style.backgroundColor = "yellow";
+    bbottom3.style.backgroundColor = "darkblue";
 
 }
 
 function flashColor() {
     top1.style.backgroundColor = "lightgreen";
-    top2.style.backgroundColor = "tomato";
-    top3.style.backgroundColor = "tomato";
-    bottom1.style.backgroundColor = "yellow";
-    bottom2.style.backgroundColor = "lightskyblue";
-    bottom3.style.backgroundColor = "lightskyblue";
-    bbottom1.style.backgroundColor = "yellow";
-    bbottom2.style.backgroundColor = "lightskyblue";
-    bbottom3.style.backgroundColor = "lightskyblue";
+    top2.style.backgroundColor = "lightred";
+    top3.style.backgroundColor = "lightcyan";
+    bottom1.style.backgroundColor = "lightyellow";
+    bottom2.style.backgroundColor = "lightblue";
+    bottom3.style.backgroundColor = "lightorange";
+    bbottom1.style.backgroundColor = "white";
+    bbottom2.style.backgroundColor = "#b19cd9";
+    bbottom3.style.backgroundColor = "lightcyan";
 }
 
 

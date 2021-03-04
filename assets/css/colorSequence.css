@@ -1,3 +1,8 @@
+body{
+    background: linear-gradient(to bottom left, #33ccff 35%, #cc33ff 78%);
+    height: 100vh;
+}
+
 .button {
     font-size: 1.5em;
 }
@@ -42,28 +47,29 @@
     border-radius: 5%;
 }
 
+
 #top1 {
     height: 9vw;
     width: 10vw;
-    background: darkgreen;
+    background: darkblue;
 }
 
 #top2 {
     height: 9vw;
     width: 10vw;
-    background: darkred;
+    background: darkblue;
 }
 
 #top3 {
     height: 9vw;
     width: 10vw;
-    background: cyan;
+    background: darkblue;
 }
 
 #bottom1 {
     height: 9vw;
     width: 10vw;
-    background: goldenrod;
+    background: darkblue;
 }
 
 #bottom2 {
@@ -75,25 +81,25 @@
 #bottom3 {
     height: 9vw;
     width: 10vw;
-    background: yellow;
+    background: darkblue;
 }
 
 #b-bottom1 {
     height: 9vw;
     width: 10vw;
-    background: yellow;
+    background: darkblue;
 }
 
 #b-bottom2 {
     height: 9vw;
     width: 10vw;
-    background: yellow;
+    background: darkblue;
 }
 
 #b-bottom3 {
     height: 9vw;
     width: 10vw;
-    background: yellow;
+    background: darkblue;
 }
 
 #control-center {
